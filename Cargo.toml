@@ -1,0 +1,30 @@
+[package]
+name = "tamcodec"
+version = "0.1.0"
+edition = "2024"
+description = "Decoder for Fritz!Box TAM (answering machine) recordings and TTS files."
+license = "MIT"
+repository = "https://github.com/Kakadus/tamcodec-rs"
+keywords = ["fritzbox", "tam", "speex", "g722", "answering-machine"]
+categories = ["multimedia::audio", "encoding"]
+
+[dependencies]
+anyhow = "1"
+audio-codec = "0.4"
+clap = { version = "4", features = ["derive"] }
+hound = "3"
+log = "0.4"
+env_logger = { version = "0.11", default-features = false, features = ["auto-color"] }
+speex-sys = "0.4"
+stdio-override = "0.2"
+tempfile = "3.27"
+
+[lints.clippy]
+all = { level = "warn", priority = -1 }
+pedantic = { level = "warn", priority = -1 }
+nursery = { level = "warn", priority = -1 }
+cargo = { level = "warn", priority = -1 }
+correctness = { level = "warn", priority = -1 }
+perf = { level = "warn", priority = -1 }
+style = { level = "warn", priority = -1 }
+suspicious = { level = "warn", priority = -1 }

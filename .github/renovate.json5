@@ -1,0 +1,15 @@
+{
+  $schema: "https://docs.renovatebot.com/renovate-schema.json",
+  extends: [
+    "config:recommended",
+    "docker:pinDigests",
+    "helpers:pinGitHubActionDigests",
+    ":configMigration",
+    "abandonments:recommended",
+  ],
+  automerge: true,
+  rebaseWhen: "conflicted",
+  schedule: ["before 6am on monday"],
+  dependencyDashboardApproval: false,
+  separateMajorMinor: false,
+}
