@@ -69,10 +69,11 @@ checksum = "330a5ed07fa54e4702c9d6c4174f74427fc0ef6e214bbd677ae50a5099946470"
 
 [[package]]
 name = "audio-codec"
-version = "0.4.7"
+version = "0.4.14"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "0ed17b200d60e7981699bc7b43317ddc8c33c57231cc5a164e3f429d12c6e940"
+checksum = "64f80e3a583b5458e1bc164971cd0102f30a84812ddb2524b618bc298f29a086"
 dependencies = [
+ "fearless_simd",
  "g729-sys",
  "libm",
  "opus-rs",
@@ -240,6 +241,15 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "da7c62ceae207dd37ea5b845da6a0696c799f85e97da1ab5b7910be3c1c80223"
 
 [[package]]
+name = "fearless_simd"
+version = "1.2.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "629c9d6b6f30b5604089e0980f4d924a013aacb1654a6cdf5d3d852224f68651"
+dependencies = [
+ "libm",
+]
+
+[[package]]
 name = "find-msvc-tools"
 version = "0.1.12"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -247,9 +257,9 @@ checksum = "3e0f1c7c3a72c66fd80abe965175f7523475c0489a87d3ff9d6e8c87d87a9d2d"
 
 [[package]]
 name = "g729-sys"
-version = "0.2.0"
+version = "0.3.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "582ee481959b69a3557c190d4c038fb8c1ff2319be9ef84ea9c98faeffebbf98"
+checksum = "ada2c88832812e768f344731c1e21d082ea59836d398d62a2f57d13fee154e0d"
 
 [[package]]
 name = "getrandom"
@@ -383,9 +393,9 @@ checksum = "384b8ab6d37215f3c5301a95a4accb5d64aa607f1fcb26a11b5303878451b4fe"
 
 [[package]]
 name = "opus-rs"
-version = "0.1.33"
+version = "0.1.41"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "a8380ecc3f3861651992dad78a8c135b3dcd94a3bcd279a733b5a078174742f6"
+checksum = "3120cb7ce0efa63481ce60e21e96c4726f2053c418cd1582ec1040ecd65d4762"
 dependencies = [
  "libm",
 ]
