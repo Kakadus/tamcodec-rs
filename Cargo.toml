@@ -1,6 +1,6 @@
 [package]
 name = "tamcodec"
-version = "0.1.0"
+version = "0.1.1"
 edition = "2024"
 description = "Decoder for Fritz!Box TAM (answering machine) recordings and TTS files."
 license = "MIT"
